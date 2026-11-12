@@ -1,42 +1,95 @@
 # Edit this file to update the schedule on the website.
-# lecture: folder name under lectures/ (gives Slides / Notebook / Colab links)
+# lecture: folder name under lectures/ (gives Slides / Notebook links)
 # also: extra lecture folders to link slides for
-# type: project or break (changes how the row is shown)
+# type: lab or break (changes how the row is shown)
+- unit: Intro 
+  sessions: 
+    - {date: "Wed Jan 20", topic: "Introduction"}
+    - {date: "Fri Jan 22", topic: "??"}
 
-- unit: Data and nearest neighbors
-  sessions:
-    - { date: "Tue Jan 13", topic: "Introduction" }
-    - { date: "Thu Jan 15", topic: "Wrangling", lecture: 00_wrangling }
-    - { date: "Tue Jan 20", topic: "Wrangling, EDA", lecture: 00_wrangling, also: [01_eda] }
-    - { date: "Thu Jan 22", topic: "Exploratory data analysis", lecture: 01_eda }
-    - { date: "Tue Jan 27", topic: "ECDFs and outliers", lecture: 02_visualization }
-    - { date: "Thu Jan 29", topic: "k-NN classification", lecture: 03_knn_classification }
-    - { date: "Tue Feb 3",  topic: "k-NN regression", lecture: 04_knn_regression }
-    - { date: "Thu Feb 5",  topic: "Train-test splits, hyperparameters", lecture: 04_knn_regression }
-    - { date: "Tue Feb 10", topic: "NHANES Project", type: project }
+- unit: Data Cleaning
+  sessions: 
+    - {date: "Mon Jan 25", topic: "Wrangling", lecture: 00_wrangling}
+    - {date: "Wed Jan 27", topic: "Wrangling, EDA", lecture: 00_wrangling, also: [01_eda]}
+    - {date: "Fri Jan 29", topic: "What institutions give the most money", type: lab }
 
-- unit: Linear models
-  sessions:
-    - { date: "Thu Feb 12", topic: "Linear models", lecture: 05_linear_models }
-    - { date: "Tue Feb 17", topic: "Feature spaces", lecture: 06_model_selection }
-    - { date: "Thu Feb 19", topic: "Bias-variance trade-off", lecture: 06_model_selection }
-    - { date: "Tue Feb 24", topic: "Cross-validation (and BVT)", lecture: 06_model_selection }
-    - { date: "Thu Feb 26", topic: "Regularization (and CV and BVT)", lecture: 07_regularization }
-    - { date: "Mar 2–6",    topic: "Spring break", type: break }
-    - { date: "Tue Mar 10", topic: "Genomics Project", type: project }
-    - { date: "Thu Mar 12", topic: "General linear models", lecture: 08_latent_variable_models }
-    - { date: "Tue Mar 17", topic: "General linear models", lecture: 08_latent_variable_models }
+- unit: Making Predictions
+  sessions: 
+    - {date: "Mon Feb 1", topic: "Conditional Probability"}
+    - {date: "Wed Feb 3", topic: "Confusion Matrices"}
+    - {date: "Fri Feb 5", topic: "Which symptoms predict which disease", type: lab}
 
-- unit: Trees, unsupervised learning, and pipelines
+- unit: Regression
+  sessions: 
+    - {date: "Mon Feb 8", topic: "Regression Trees"}
+    - {date: "Wed Feb 10", topic: "Regression Trees", lecture: 09_trees}
+    - {date: "Fri Feb 12", topic: "Who dies how and when", type: lab}
+
+- unit: Classification
+  sessions: 
+    - {date: "Mon Feb 15", topic: "Classification Trees"}
+    - {date: "Wed Feb 17", topic: "Classification Trees", lecture: 09_trees}
+    - {date: "Fri Feb 19", topic: "What predicts default and profitability?", type: lab}
+
+- unit: Ensemble Learning
+  sessions: 
+    - {date: "Mon Feb 22", topic: "Ensemble Learning"}
+    - {date: "Wed Feb 24", topic: "Random Forests", lecture: 10_ensembles}
+    - {date: "Fri Feb 26", topic: "Who wins the tournament?", type: lab}
+
+- unit: Models with Weights
+  sessions: 
+    - {date: "Mon Mar 1", topic: "Linear Regression"}
+    - {date: "Wed Mar 3", topic: "Linear Models", lecture: 05_linear_models}
+    - {date: "Fri Mar 5", topic: "How do the methods compare?", type: lab}
+
+- unit: Spring break
   sessions:
-    - { date: "Thu Mar 19", topic: "Trees", lecture: 09_trees }
-    - { date: "Tue Mar 24", topic: "Ensembles", lecture: 10_ensembles }
-    - { date: "Thu Mar 26", topic: "Random forests", lecture: 10_ensembles }
-    - { date: "Tue Mar 31", topic: "Classifier evaluation", lecture: 11_classifier_evaluation }
-    - { date: "Thu Apr 2",  topic: "k-Means clustering", lecture: 12_clustering }
-    - { date: "Tue Apr 7",  topic: "Hierarchical clustering", lecture: 12_clustering }
-    - { date: "Thu Apr 9",  topic: "Principal components analysis", lecture: 13_pca }
-    - { date: "Tue Apr 14", topic: "Principal components analysis", lecture: 13_pca }
-    - { date: "Tue Apr 21", topic: "Principal components regression", lecture: 14_pcr }
-    - { date: "Thu Apr 23", topic: "scikit-learn pipelines", lecture: 15_pipelines }
-    - { date: "Tue Apr 28", topic: "Demand Estimation Project", type: project }
+    - {date: "Mar 6–14", topic: "Spring break", type: break}
+
+- unit: Feature Spaces
+  sessions: 
+    - {date: "Mon Mar 15", topic: "Multiple Linear Regression"}
+    - {date: "Wed Mar 17", topic: "Multiple Linear Regression", lecture: 05_linear_models}
+    - {date: "Fri Mar 19", topic: "What is the price of a house?", type: lab}
+
+- unit: Feature Engineering
+  sessions: 
+    - {date: "Mon Mar 22", topic: "Bias-Variance Tradeoff"}
+    - {date: "Wed Mar 24", topic: "Bias-Variance Tradeoff", lecture: 06_model_selection}
+    - {date: "Fri Mar 26", topic: "Does adding more information improve predictions?", type: lab}
+
+- unit: Model Validation
+  sessions: 
+    - {date: "Mon Mar 29", topic: "Cross Validation"}
+    - {date: "Wed Mar 31", topic: "Cross Validation", lecture: 06_model_selection}
+    - {date: "Fri Apr 2", topic: "Which competing model is trusthworthy?", type: lab}
+
+- unit: Pipelines 
+  sessions: 
+    - {date: "Mon Apr 5", topic: "Target Leakage"}
+    - {date: "Wed Apr 7", topic: "Target Leakage", lecture: 15_pipelines}
+    - {date: "Fri Apr 9"}
+
+- unit: Overfitting
+  sessions: 
+    - {date: "Mon Apr 12", topic: "Regularization"}
+    - {date: "Wed Apr 14", topic: "Regularization", lecture: 07_regularization}
+    - {date: "Fri Apr 16", topic: "Which genes prevent cancer?", type: lab}
+
+- unit: Binary Classification
+  sessions: 
+    - {date: "Mon Apr 19", topic: "Logistic Regression"}
+    - {date: "Wed Apr 21", topic: "Logistic Regression", lecture: 08_latent_variable_models}
+    - {date: "Fri Apr 23", topic: "Who is likely to die of a heart attack?", type: lab}
+
+- unit: Categorical Classification
+  sessions: 
+    - {date: "Mon Apr 26", topic: "Multinomial Logistic Regression"}
+    - {date: "Wed Apr 28", topic: "Multinomial Logistic Regression", lecture: 08_latent_variable_models}
+    - {date: "Fri Apr 30", topic: "Which products are the most profitable?", type: lab}
+
+- unit: Intro to Neural Networks 
+  sessions: 
+    - {date: "Mon May 3", topic: "Neural Networks" }
+    - {date: "Wed May 5", topic: "Neural Networks"}

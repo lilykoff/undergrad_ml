@@ -1,5 +1,4 @@
 {%- assign id = include.id -%}
 {%- assign path = "lectures/" | append: id | append: "/" | append: id -%}
 <a href="{{ path | append: '.slides.html' | relative_url }}">Slides</a> ·
-<a href="https://github.com/{{ site.repo }}/blob/{{ site.branch }}/{{ path }}.ipynb">Notebook</a> ·
-<a href="https://colab.research.google.com/github/{{ site.repo }}/blob/{{ site.branch }}/{{ path }}.ipynb">Colab</a>
+<a href="https://github.com/{{ site.repo }}/blob/{{ site.branch }}/{{ path }}.ipynb">Notebook</a>

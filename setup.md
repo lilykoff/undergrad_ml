@@ -24,17 +24,6 @@ You need Python 3 with `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-l
 
 3. Open any notebook in `lectures/` with Jupyter or VS Code. The notebooks read data from `../../data/`, so run them from inside their own folder.
 
-## In Google Colab
-
-Click a **Colab** link on the [schedule]({{ "/" | relative_url }}), then run this in the first cell. Change the last line to the lecture you opened.
-
-```python
-!git clone https://github.com/lilykoff/undergrad_ml.git
-%cd undergrad_ml
-!python get_data.py
-%cd lectures/03_knn_classification
-```
-
 ## Repository layout
 
 ```

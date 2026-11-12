@@ -15,7 +15,13 @@ DS 3001 / DS 3021 · University of Virginia
 
 ---
 
-Each session links to the lecture slides, the notebook on GitHub, and a copy you can open in Google Colab. See [Setup]({{ "/setup/" | relative_url }}) to download the datasets first.
+Each week has three sessions:
+
+- **Monday:** math lecture (no computers)
+- **Wednesday:** hands-on coding
+- **Friday:** lab
+
+Coding sessions link to the lecture slides and the notebook on GitHub. See [Setup]({{ "/setup/" | relative_url }}) to download the datasets first.
 
 {% for unit in site.data.schedule %}
 ## {{ unit.unit }}
@@ -29,7 +35,7 @@ Each session links to the lecture slides, the notebook on GitHub, and a copy you
     <tr>
       <td>{{ s.date }}</td>
       <td>
-        {%- if s.type == "project" -%}<span class="label label-uva">Project</span> {{ s.topic }}
+        {%- if s.type == "lab" or s.type == "project" -%}<span class="label label-uva">Lab</span> {{ s.topic }}
         {%- elsif s.type == "break" -%}<em>{{ s.topic }}</em>
         {%- else -%}{{ s.topic }}{%- endif -%}
       </td>
