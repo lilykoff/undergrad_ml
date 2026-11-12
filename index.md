@@ -21,7 +21,7 @@ Each week has three sessions:
 - **Wednesday:** hands-on coding
 - **Friday:** lab
 
-Coding sessions link to the lecture slides and the notebook on GitHub. See [Setup]({{ "/setup/" | relative_url }}) to download the datasets first.
+Coding sessions link to the lecture slides and the notebook on GitHub, and labs link to their data and question sheet. Grey links haven't been posted yet. See [Setup]({{ "/setup/" | relative_url }}) to download the datasets first.
 
 {% for unit in site.data.schedule %}
 ## {{ unit.unit }}
@@ -42,6 +42,18 @@ Coding sessions link to the lecture slides and the notebook on GitHub. See [Setu
       <td>
         {%- if s.lecture -%}{% include lecture_links.html id=s.lecture %}{%- endif -%}
         {%- for x in s.also -%}<br><a href="{{ 'lectures/' | append: x | append: '/' | append: x | append: '.slides.html' | relative_url }}">{{ x }} slides</a>{%- endfor -%}
+        {%- if s.data and s.data != "" -%}
+          {%- if s.lecture %} · {% endif -%}
+          {%- if s.data contains "://" -%}<a href="{{ s.data }}">Data</a>
+          {%- else -%}<a href="{{ s.data | relative_url }}">Data</a>{%- endif -%}
+        {%- elsif s.data == "" -%}
+          {%- if s.lecture %} · {% endif -%}<span class="tbd" title="Not posted yet">Data</span>
+        {%- endif -%}
+        {%- if s.pdf and s.pdf != "" -%}
+          {%- if s.lecture or s.data %} · {% endif -%}<a href="{{ s.pdf | relative_url }}" download>Lab questions (PDF)</a>
+        {%- elsif s.pdf == "" -%}
+          {%- if s.lecture or s.data %} · {% endif -%}<span class="tbd" title="Not posted yet">Lab questions (PDF)</span>
+        {%- endif -%}
       </td>
     </tr>
   {%- endfor %}

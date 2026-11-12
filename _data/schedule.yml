@@ -1,7 +1,14 @@
 # Edit this file to update the schedule on the website.
-# lecture: folder name under lectures/ (gives Slides / Notebook links)
-# also: extra lecture folders to link slides for
-# type: lab or break (changes how the row is shown)
+#
+# Each session can have:
+#   lecture: folder name under lectures/ (gives Slides / Notebook links)
+#   also:    extra lecture folders to link slides for
+#   type:    lab or break (changes how the row is shown)
+#   data:    link to the data, e.g. "https://zenodo.org/records/..." or a repo file like "labs/donations.csv"
+#   pdf:     lab question sheet, e.g. "labs/01_donations.pdf" (put the file in labs/)
+# Leave data or pdf as "" until ready: the link shows greyed out as "not posted yet".
+# Any session can get a data link, not just labs.
+
 - unit: Intro 
   sessions: 
     - {date: "Wed Jan 20", topic: "Introduction and Environment Setup"}
@@ -11,37 +18,37 @@
   sessions: 
     - {date: "Mon Jan 25", topic: "Exploratory Data Analysis", lecture: 01_eda}
     - {date: "Wed Jan 27", topic: "Data Visualization", lecture: 02_visualization}
-    - {date: "Fri Jan 29", topic: "Differential Diagnosis: What institutions give the most money", type: lab}
+    - {date: "Fri Jan 29", topic: "Donations: What institutions give the most money", type: lab, data: "", pdf: "" }
 
 - unit: Making Predictions
   sessions: 
     - {date: "Mon Feb 1", topic: "Conditional Probability"}
     - {date: "Wed Feb 3", topic: "Confusion Matrices with pd.crosstab"}
-    - {date: "Fri Feb 5", topic: "Differential Diagnosis: Which symptoms predict which disease", type: lab}
+    - {date: "Fri Feb 5", topic: "Differential Diagnosis: Which symptoms predict which disease", type: lab, data: "", pdf: "" }
 
 - unit: Regression
   sessions: 
     - {date: "Mon Feb 8", topic: "Regression Trees"}
     - {date: "Wed Feb 10", topic: "Regression Trees with sklearn", lecture: 09_trees}
-    - {date: "Fri Feb 12", topic: "Metabrics Cancer Data: Who dies how and when", type: lab}
+    - {date: "Fri Feb 12", topic: "Metabrics Cancer Data: Who dies how and when", type: lab, data: "", pdf: "" }
 
 - unit: Classification
   sessions: 
     - {date: "Mon Feb 15", topic: "Classification Trees"}
     - {date: "Wed Feb 17", topic: "Classification Trees with sklearn", lecture: 09_trees}
-    - {date: "Fri Feb 19", topic: "Bond Ratings: What predicts default and profitability?", type: lab}
+    - {date: "Fri Feb 19", topic: "Bond Ratings: What predicts default and profitability?", type: lab, data: "", pdf: "" }
 
 - unit: Ensemble Learning
   sessions: 
     - {date: "Mon Feb 22", topic: "Ensemble Learning"}
     - {date: "Wed Feb 24", topic: "Random Forests with sklearn", lecture: 10_ensembles}
-    - {date: "Fri Feb 26", topic: "March Madness: Who wins the tournament?", type: lab}
+    - {date: "Fri Feb 26", topic: "March Madness: Who wins the tournament?", type: lab, data: "", pdf: "" }
 
 - unit: Models with Weights
   sessions: 
     - {date: "Mon Mar 1", topic: "Linear Regression"}
     - {date: "Wed Mar 3", topic: "Linear Models with linear algebra", lecture: 05_linear_models}
-    - {date: "Fri Mar 5", topic: "Tree vs. hyperplane: How do the methods compare?", type: lab}
+    - {date: "Fri Mar 5", topic: "Tree vs. hyperplane: How do the methods compare?", type: lab, data: "", pdf: "" }
 
 - unit: Spring break
   sessions:
@@ -51,19 +58,19 @@
   sessions: 
     - {date: "Mon Mar 15", topic: "Multiple Linear Regression"}
     - {date: "Wed Mar 17", topic: "Multiple Linear Regression with sklearn", lecture: 05_linear_models}
-    - {date: "Fri Mar 19", topic: "Hedonic Pricing: What is the price of a house?", type: lab}
+    - {date: "Fri Mar 19", topic: "Hedonic Pricing: What is the price of a house?", type: lab, data: "", pdf: "" }
 
 - unit: Feature Engineering
   sessions: 
     - {date: "Mon Mar 22", topic: "Bias-Variance Tradeoff"}
     - {date: "Wed Mar 24", topic: "Bias-Variance Tradeoff", lecture: 06_model_selection}
-    - {date: "Fri Mar 26", topic: "Does adding more information improve predictions?", type: lab}
+    - {date: "Fri Mar 26", topic: "Does adding more information improve predictions?", type: lab, data: "", pdf: "" }
 
 - unit: Model Validation
   sessions: 
     - {date: "Mon Mar 29", topic: "Cross Validation"}
     - {date: "Wed Mar 31", topic: "Train Test Split with sklearn", lecture: 06_model_selection}
-    - {date: "Fri Apr 2", topic: "Which competing model is trusthworthy?", type: lab}
+    - {date: "Fri Apr 2", topic: "Which competing model is trusthworthy?", type: lab, data: "", pdf: "" }
 
 - unit: Pipelines 
   sessions: 
@@ -75,19 +82,19 @@
   sessions: 
     - {date: "Mon Apr 12", topic: "Regularization"}
     - {date: "Wed Apr 14", topic: "Lasso and Ridge with sklearn", lecture: 07_regularization}
-    - {date: "Fri Apr 16", topic: "Genomics: Which genes prevent cancer?", type: lab}
+    - {date: "Fri Apr 16", topic: "Genomics: Which genes prevent cancer?", type: lab, data: "", pdf: "" }
 
 - unit: Binary Classification
   sessions: 
     - {date: "Mon Apr 19", topic: "Logistic Regression"}
     - {date: "Wed Apr 21", topic: "Logistic Regression with sklearn", lecture: 08_latent_variable_models}
-    - {date: "Fri Apr 23", topic: "Heart Attacks: who is likely to die of a heart attack?", type: lab}
+    - {date: "Fri Apr 23", topic: "Heart Attacks: who is likely to die of a heart attack?", type: lab, data: "", pdf: "" }
 
 - unit: Categorical Classification
   sessions: 
     - {date: "Mon Apr 26", topic: "Multinomial Logistic Regression"}
     - {date: "Wed Apr 28", topic: "Multinomial Logistic Regression with sklearn", lecture: 08_latent_variable_models}
-    - {date: "Fri Apr 30", topic: "Demand Estimation: Which products are the most profitable?", type: lab}
+    - {date: "Fri Apr 30", topic: "Demand Estimation: Which products are the most profitable?", type: lab, data: "", pdf: "" }
 
 - unit: Intro to Neural Networks 
   sessions: 
