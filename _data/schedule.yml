@@ -4,44 +4,44 @@
 # type: lab or break (changes how the row is shown)
 - unit: Intro 
   sessions: 
-    - {date: "Wed Jan 20", topic: "Introduction"}
-    - {date: "Fri Jan 22", topic: "??"}
+    - {date: "Wed Jan 20", topic: "Introduction and Environment Setup"}
+    - {date: "Fri Jan 22", topic: "Data Wrangling", lecture: 00_wrangling}
 
-- unit: Data Cleaning
+- unit: Data Cleaning and EDA 
   sessions: 
-    - {date: "Mon Jan 25", topic: "Wrangling", lecture: 00_wrangling}
-    - {date: "Wed Jan 27", topic: "Wrangling, EDA", lecture: 00_wrangling, also: [01_eda]}
-    - {date: "Fri Jan 29", topic: "What institutions give the most money", type: lab }
+    - {date: "Mon Jan 25", topic: "Exploratory Data Analysis", lecture: 01_eda}
+    - {date: "Wed Jan 27", topic: "Data Visualization", lecture: 02_visualization}
+    - {date: "Fri Jan 29", topic: "Differential Diagnosis: What institutions give the most money", type: lab}
 
 - unit: Making Predictions
   sessions: 
     - {date: "Mon Feb 1", topic: "Conditional Probability"}
-    - {date: "Wed Feb 3", topic: "Confusion Matrices"}
-    - {date: "Fri Feb 5", topic: "Which symptoms predict which disease", type: lab}
+    - {date: "Wed Feb 3", topic: "Confusion Matrices with pd.crosstab"}
+    - {date: "Fri Feb 5", topic: "Differential Diagnosis: Which symptoms predict which disease", type: lab}
 
 - unit: Regression
   sessions: 
     - {date: "Mon Feb 8", topic: "Regression Trees"}
-    - {date: "Wed Feb 10", topic: "Regression Trees", lecture: 09_trees}
-    - {date: "Fri Feb 12", topic: "Who dies how and when", type: lab}
+    - {date: "Wed Feb 10", topic: "Regression Trees with sklearn", lecture: 09_trees}
+    - {date: "Fri Feb 12", topic: "Metabrics Cancer Data: Who dies how and when", type: lab}
 
 - unit: Classification
   sessions: 
     - {date: "Mon Feb 15", topic: "Classification Trees"}
-    - {date: "Wed Feb 17", topic: "Classification Trees", lecture: 09_trees}
-    - {date: "Fri Feb 19", topic: "What predicts default and profitability?", type: lab}
+    - {date: "Wed Feb 17", topic: "Classification Trees with sklearn", lecture: 09_trees}
+    - {date: "Fri Feb 19", topic: "Bond Ratings: What predicts default and profitability?", type: lab}
 
 - unit: Ensemble Learning
   sessions: 
     - {date: "Mon Feb 22", topic: "Ensemble Learning"}
-    - {date: "Wed Feb 24", topic: "Random Forests", lecture: 10_ensembles}
-    - {date: "Fri Feb 26", topic: "Who wins the tournament?", type: lab}
+    - {date: "Wed Feb 24", topic: "Random Forests with sklearn", lecture: 10_ensembles}
+    - {date: "Fri Feb 26", topic: "March Madness: Who wins the tournament?", type: lab}
 
 - unit: Models with Weights
   sessions: 
     - {date: "Mon Mar 1", topic: "Linear Regression"}
-    - {date: "Wed Mar 3", topic: "Linear Models", lecture: 05_linear_models}
-    - {date: "Fri Mar 5", topic: "How do the methods compare?", type: lab}
+    - {date: "Wed Mar 3", topic: "Linear Models with linear algebra", lecture: 05_linear_models}
+    - {date: "Fri Mar 5", topic: "Tree vs. hyperplane: How do the methods compare?", type: lab}
 
 - unit: Spring break
   sessions:
@@ -50,8 +50,8 @@
 - unit: Feature Spaces
   sessions: 
     - {date: "Mon Mar 15", topic: "Multiple Linear Regression"}
-    - {date: "Wed Mar 17", topic: "Multiple Linear Regression", lecture: 05_linear_models}
-    - {date: "Fri Mar 19", topic: "What is the price of a house?", type: lab}
+    - {date: "Wed Mar 17", topic: "Multiple Linear Regression with sklearn", lecture: 05_linear_models}
+    - {date: "Fri Mar 19", topic: "Hedonic Pricing: What is the price of a house?", type: lab}
 
 - unit: Feature Engineering
   sessions: 
@@ -62,34 +62,34 @@
 - unit: Model Validation
   sessions: 
     - {date: "Mon Mar 29", topic: "Cross Validation"}
-    - {date: "Wed Mar 31", topic: "Cross Validation", lecture: 06_model_selection}
+    - {date: "Wed Mar 31", topic: "Train Test Split with sklearn", lecture: 06_model_selection}
     - {date: "Fri Apr 2", topic: "Which competing model is trusthworthy?", type: lab}
 
 - unit: Pipelines 
   sessions: 
     - {date: "Mon Apr 5", topic: "Target Leakage"}
-    - {date: "Wed Apr 7", topic: "Target Leakage", lecture: 15_pipelines}
+    - {date: "Wed Apr 7", topic: "Pipelines with sklearn", lecture: 15_pipelines}
     - {date: "Fri Apr 9"}
 
 - unit: Overfitting
   sessions: 
     - {date: "Mon Apr 12", topic: "Regularization"}
-    - {date: "Wed Apr 14", topic: "Regularization", lecture: 07_regularization}
-    - {date: "Fri Apr 16", topic: "Which genes prevent cancer?", type: lab}
+    - {date: "Wed Apr 14", topic: "Lasso and Ridge with sklearn", lecture: 07_regularization}
+    - {date: "Fri Apr 16", topic: "Genomics: Which genes prevent cancer?", type: lab}
 
 - unit: Binary Classification
   sessions: 
     - {date: "Mon Apr 19", topic: "Logistic Regression"}
-    - {date: "Wed Apr 21", topic: "Logistic Regression", lecture: 08_latent_variable_models}
-    - {date: "Fri Apr 23", topic: "Who is likely to die of a heart attack?", type: lab}
+    - {date: "Wed Apr 21", topic: "Logistic Regression with sklearn", lecture: 08_latent_variable_models}
+    - {date: "Fri Apr 23", topic: "Heart Attacks: who is likely to die of a heart attack?", type: lab}
 
 - unit: Categorical Classification
   sessions: 
     - {date: "Mon Apr 26", topic: "Multinomial Logistic Regression"}
-    - {date: "Wed Apr 28", topic: "Multinomial Logistic Regression", lecture: 08_latent_variable_models}
-    - {date: "Fri Apr 30", topic: "Which products are the most profitable?", type: lab}
+    - {date: "Wed Apr 28", topic: "Multinomial Logistic Regression with sklearn", lecture: 08_latent_variable_models}
+    - {date: "Fri Apr 30", topic: "Demand Estimation: Which products are the most profitable?", type: lab}
 
 - unit: Intro to Neural Networks 
   sessions: 
     - {date: "Mon May 3", topic: "Neural Networks" }
-    - {date: "Wed May 5", topic: "Neural Networks"}
+    - {date: "Wed May 5", topic: "Neural Networks with sklearn"}
