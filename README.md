@@ -1,35 +1,23 @@
 # Undergrad Machine Learning
-Day-to-day content for Foundations of Machine Learning (DS3001)/Analytics 1 (DS3021)
 
-- 2026/01/13: Introduction
-- 2026/01/15: Wrangling
-- 2026/01/20: Wrangling, EDA
-- 2026/01/22: EDA
-- 2026/01/27: ECDFs and Outliers
-- 2026/01/29: k-NN classification
-- 2026/02/03: k-NN regression
-- 2026/02/05: Train-test splits, hyperparameters
-- 2026/02/10: NHANES Project
-  
-- 2026/02/12: Linear Models
-- 2026/02/17: Feature Spaces
-- 2026/02/19: Bias-Variance Trade-Off
-- 2026/02/24: Cross Validation (and BVT)
-- 2026/02/26: Regularization (and CV and BVT)
-- 2026/03/05: Spring Break
-- 2026/03/07: Spring Break
-- 2026/03/10: Genomics Project
-- 2026/03/12: General Linear Models
-- 2026/03/17: General Linear Models
-  
-- 2026/03/19: Trees
-- 2026/03/24: Ensembles
-- 2026/03/26: Random Forests
-- 2026/03/31: Classifier Evaluation
-- 2026/04/02: k-Means Clustering
-- 2026/04/07: Hierarchical Custering
-- 2026/04/09: Principal Components Analysis
-- 2026/04/14: Principal Components Analysis
-- 2026/04/21: Principal Components Regression
-- 2026/04/23: SciKit Pipelines
-- 2026/04/28: Demand Estimation Project
+Day-to-day content for Foundations of Machine Learning (DS3001) / Analytics 1 (DS3021).
+
+**Course site:** https://lilykoff.github.io/undergrad_ml/
+
+## Getting started
+
+```bash
+git clone https://github.com/lilykoff/undergrad_ml.git
+cd undergrad_ml
+python get_data.py   # downloads data/ from Zenodo
+```
+
+Each lecture lives in its own folder under `lectures/` with its notebook, its slides, and its images. Notebooks read data from `../../data/`.
+
+## Updating the site
+
+The site is built by GitHub Pages using the [Just the Docs](https://just-the-docs.com) theme.
+
+- Schedule: edit `_data/schedule.yml`
+- Lecture list: edit `_data/lectures.yml`
+- Setup instructions: edit `setup.md`

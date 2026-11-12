@@ -1,0 +1,17 @@
+# One entry per folder in lectures/. Used on the Lectures page.
+- { id: 00_wrangling, title: "Data wrangling", data: "" }
+- { id: 01_eda, title: "Exploratory data analysis", data: "" }
+- { id: 02_visualization, title: "Visualization: ECDFs, quantiles, outliers", data: "" }
+- { id: 03_knn_classification, title: "k-nearest neighbor classification", data: "cars_env" }
+- { id: 04_knn_regression, title: "k-NN regression", data: "cars_env" }
+- { id: 05_linear_models, title: "Linear models", data: "craiglist_cville_cars_long, heart_failure" }
+- { id: 06_model_selection, title: "Model selection: features, bias-variance, cross-validation", data: "" }
+- { id: 07_regularization, title: "Regularization", data: "CardiacPatientData" }
+- { id: 08_latent_variable_models, title: "Latent variable models", data: "heart_failure, land_mines" }
+- { id: 09_trees, title: "Decision trees", data: "airbnb_hw, divorce" }
+- { id: 10_ensembles, title: "Ensembles and random forests", data: "corporate_ratings, pierce_county_house_sales" }
+- { id: 11_classifier_evaluation, title: "Classifier evaluation", data: "diabetes-dataset" }
+- { id: 12_clustering, title: "Clustering", data: "crimebystate, electricity_data" }
+- { id: 13_pca, title: "Principal components analysis", data: "heart_failure, pierce_county_house_sales, pretrial_data" }
+- { id: 14_pcr, title: "Principal components regression", data: "CardiacPatientData, golub" }
+- { id: 15_pipelines, title: "scikit-learn pipelines", data: "Q1_clean, diabetes-dataset" }

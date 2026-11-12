@@ -1,0 +1,42 @@
+# Edit this file to update the schedule on the website.
+# lecture: folder name under lectures/ (gives Slides / Notebook / Colab links)
+# also: extra lecture folders to link slides for
+# type: project or break (changes how the row is shown)
+
+- unit: Data and nearest neighbors
+  sessions:
+    - { date: "Tue Jan 13", topic: "Introduction" }
+    - { date: "Thu Jan 15", topic: "Wrangling", lecture: 00_wrangling }
+    - { date: "Tue Jan 20", topic: "Wrangling, EDA", lecture: 00_wrangling, also: [01_eda] }
+    - { date: "Thu Jan 22", topic: "Exploratory data analysis", lecture: 01_eda }
+    - { date: "Tue Jan 27", topic: "ECDFs and outliers", lecture: 02_visualization }
+    - { date: "Thu Jan 29", topic: "k-NN classification", lecture: 03_knn_classification }
+    - { date: "Tue Feb 3",  topic: "k-NN regression", lecture: 04_knn_regression }
+    - { date: "Thu Feb 5",  topic: "Train-test splits, hyperparameters", lecture: 04_knn_regression }
+    - { date: "Tue Feb 10", topic: "NHANES Project", type: project }
+
+- unit: Linear models
+  sessions:
+    - { date: "Thu Feb 12", topic: "Linear models", lecture: 05_linear_models }
+    - { date: "Tue Feb 17", topic: "Feature spaces", lecture: 06_model_selection }
+    - { date: "Thu Feb 19", topic: "Bias-variance trade-off", lecture: 06_model_selection }
+    - { date: "Tue Feb 24", topic: "Cross-validation (and BVT)", lecture: 06_model_selection }
+    - { date: "Thu Feb 26", topic: "Regularization (and CV and BVT)", lecture: 07_regularization }
+    - { date: "Mar 2–6",    topic: "Spring break", type: break }
+    - { date: "Tue Mar 10", topic: "Genomics Project", type: project }
+    - { date: "Thu Mar 12", topic: "General linear models", lecture: 08_latent_variable_models }
+    - { date: "Tue Mar 17", topic: "General linear models", lecture: 08_latent_variable_models }
+
+- unit: Trees, unsupervised learning, and pipelines
+  sessions:
+    - { date: "Thu Mar 19", topic: "Trees", lecture: 09_trees }
+    - { date: "Tue Mar 24", topic: "Ensembles", lecture: 10_ensembles }
+    - { date: "Thu Mar 26", topic: "Random forests", lecture: 10_ensembles }
+    - { date: "Tue Mar 31", topic: "Classifier evaluation", lecture: 11_classifier_evaluation }
+    - { date: "Thu Apr 2",  topic: "k-Means clustering", lecture: 12_clustering }
+    - { date: "Tue Apr 7",  topic: "Hierarchical clustering", lecture: 12_clustering }
+    - { date: "Thu Apr 9",  topic: "Principal components analysis", lecture: 13_pca }
+    - { date: "Tue Apr 14", topic: "Principal components analysis", lecture: 13_pca }
+    - { date: "Tue Apr 21", topic: "Principal components regression", lecture: 14_pcr }
+    - { date: "Thu Apr 23", topic: "scikit-learn pipelines", lecture: 15_pipelines }
+    - { date: "Tue Apr 28", topic: "Demand Estimation Project", type: project }

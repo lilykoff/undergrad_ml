@@ -1,0 +1,29 @@
+title: Foundations of Machine Learning
+description: Lecture slides, notebooks, and data for DS 3001 / DS 3021 at the University of Virginia.
+repo: lilykoff/undergrad_ml
+branch: main
+
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+plugins:
+  - jekyll-remote-theme
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "Course repo on GitHub":
+    - "https://github.com/lilykoff/undergrad_ml"
+aux_links_new_tab: true
+
+footer_content: "DS 3001 / DS 3021 · University of Virginia"
+
+exclude:
+  - data/
+  - data.zip
+  - get_data.py
+  - README.md
+  - README_v2.md
+  - .Rhistory
+  - Gemfile
+  - Gemfile.lock
