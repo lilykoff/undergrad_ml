@@ -17,7 +17,7 @@ aux_links:
     - "https://github.com/lilykoff/undergrad_ml"
 aux_links_new_tab: true
 
-footer_content: "DS 3001 / DS 3021 · University of Virginia"
+footer_content: "DS 3021 · University of Virginia"
 
 exclude:
   - data/

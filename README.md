@@ -1,6 +1,6 @@
 # Undergrad Machine Learning
 
-Day-to-day content for Foundations of Machine Learning (DS3001) / Analytics 1 (DS3021).
+Day-to-day content for Predictive Analytics (DS3021).
 
 **Course site:** https://lilykoff.github.io/undergrad_ml/
 
