@@ -1,0 +1,42 @@
+// UVA orange accents on top of the uva color scheme
+
+// Orange rule under the site title
+.site-header {
+  border-bottom: 3px solid #e57200;
+}
+
+.site-title {
+  color: #232d4b;
+  font-weight: 600;
+}
+
+// Current page in the sidebar
+.nav-list .nav-list-item .nav-list-link.active {
+  color: #232d4b;
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 #e57200;
+}
+
+// Orange underline on section headings
+.main-content h2 {
+  border-bottom: 2px solid #f9dcbf;
+  padding-bottom: 0.25rem;
+}
+
+// Table headers in UVA blue
+.main-content th {
+  background-color: #232d4b;
+  color: #fff;
+}
+
+// "Project" label: UVA blue text on UVA orange
+.label.label-uva {
+  background-color: #e57200;
+  color: #232d4b;
+}
+
+.btn-primary:hover {
+  background-color: #e57200;
+  background-image: none;
+  color: #232d4b;
+}

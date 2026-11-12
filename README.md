@@ -16,8 +16,9 @@ Each lecture lives in its own folder under `lectures/` with its notebook, its sl
 
 ## Updating the site
 
-The site is built by GitHub Pages using the [Just the Docs](https://just-the-docs.com) theme.
+The site is built by GitHub Pages using the [Just the Docs](https://just-the-docs.com) theme with UVA colors.
 
 - Schedule: edit `_data/schedule.yml`
 - Lecture list: edit `_data/lectures.yml`
 - Setup instructions: edit `setup.md`
+- Colors: `_sass/color_schemes/uva.scss` and `_sass/custom/custom.scss`

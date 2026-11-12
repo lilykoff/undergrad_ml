@@ -1,0 +1,19 @@
+// UVA brand colors (brand.virginia.edu/design-assets/colors)
+@import "./color_schemes/light";
+
+$uva-blue: #232d4b;
+$uva-blue-25: #c8cbd2;
+$uva-orange: #e57200;
+$uva-orange-25: #f9dcbf;
+$uva-link-blue: #495e9d;
+$uva-light-gray: #f1f1ef;
+
+$body-heading-color: $uva-blue;
+$body-text-color: #333;
+$link-color: $uva-link-blue;
+$nav-child-link-color: $uva-link-blue;
+$sidebar-color: $uva-light-gray;
+$btn-primary-color: $uva-blue;
+$border-color: #dadada;
+$table-background-color: #fff;
+$feedback-color: $uva-light-gray;

@@ -29,7 +29,7 @@ Each session links to the lecture slides, the notebook on GitHub, and a copy you
     <tr>
       <td>{{ s.date }}</td>
       <td>
-        {%- if s.type == "project" -%}<span class="label label-purple">Project</span> {{ s.topic }}
+        {%- if s.type == "project" -%}<span class="label label-uva">Project</span> {{ s.topic }}
         {%- elsif s.type == "break" -%}<em>{{ s.topic }}</em>
         {%- else -%}{{ s.topic }}{%- endif -%}
       </td>
